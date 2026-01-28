@@ -10,7 +10,7 @@ args = parser.parse_args()
 offset_width_loc = "0x4049D3"
 offset_height_loc = "0x4049D8"
 offset_width = int(offset_width_loc,16)
-offset_height = int("0x4049D3",16)
+offset_height = int(offset_height_loc,16)
 width_value = args.width - 1
 height_value = args.height - 1
 
@@ -30,3 +30,4 @@ if args.height > 1200:
         f.write(height_hex)
 
 print(f"All done! Have fun with 1.4.5!")
+
